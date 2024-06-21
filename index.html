@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchPedia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="logo.png" alt="SearchPedia Logo" class="logo">
+    <p class="subtitle"></p>
+    <div class="search-form">
+        <input id="searchInput" type="text" placeholder="Search the web..." onkeypress="handleKeyPress(event)">
+        <button onclick="searchDuckDuckGo()">Enter</button>
+        <button onclick="searchGoogle()">More</button>
+        <button onclick="openNewTab()">New Tab</button>
+    </div>
+    <div id="answer" class="answer"></div>
+    <div id="customAnswer" class="custom-answer hide"></div>
+    <audio id="searchSound" src="search_sound.mp3"></audio>
+    <audio id="noResultSound" src="no_result.mp3"></audio>
+    <script src="scripts.js"></script>
+</body>
+</html>
